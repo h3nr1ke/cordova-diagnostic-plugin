@@ -11,7 +11,6 @@
 #import "Diagnostic.h"
 
 #import <Contacts/Contacts.h>
-#import <AddressBook/AddressBook.h>
 
 @interface Diagnostic_Contacts : CDVPlugin
 

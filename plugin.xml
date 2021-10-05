@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova.plugins.diagnostic"
-    version="6.0.4">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.plugins.diagnostic" version="6.0.5">
 
     <name>Diagnostic</name>
     <description>Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.</description>
@@ -10,12 +7,12 @@
     <license>MIT</license>
     <keywords>ecosystem:cordova,cordova,phonegap,android,ios,windows,diagnostic,wifi,location,gps,camera,bluetooth,settings</keywords>
     <engines>
-        <engine name="cordova" version=">=9.0.0"/>
-        <engine name="cordova-android" version=">=8.0.0"/>
-        <engine name="cordova-ios" version=">=5.0.0"/>
+        <engine name="cordova" version=">=9.0.0" />
+        <engine name="cordova-android" version=">=8.0.0" />
+        <engine name="cordova-ios" version=">=6.0.0" />
     </engines>
-    <repo>https://github.com/dpa99c/cordova-diagnostic-plugin.git</repo>
-    <issue>https://github.com/dpa99c/cordova-diagnostic-plugin/issues</issue>
+    <repo>https://github.com/h3nr1ke/cordova-diagnostic-plugin.git</repo>
+    <issue>https://github.com/h3nr1ke/cordova-diagnostic-plugin/issues</issue>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -184,7 +181,6 @@
         </js-module>
 
         <framework src="Contacts.framework" />
-        <framework src="AddressBook.framework" />
 
         <config-file target="*-Info.plist" parent="NSContactsUsageDescription">
             <string>This app requires contacts access to function properly.</string>
@@ -233,7 +229,7 @@
         <config-file target="*-Info.plist" parent="NSRemindersUsageDescription">
             <string>This app requires reminders access to function properly.</string>
         </config-file>
-        
+
         <header-file src="src/ios/Diagnostic_Reminders.h" />
         <source-file src="src/ios/Diagnostic_Reminders.m" />
         <!--END_MODULE REMINDERS-->
@@ -263,8 +259,8 @@
 
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic" >
-                <param name="android-package" value="cordova.plugins.Diagnostic"/>
+            <feature name="Diagnostic">
+                <param name="android-package" value="cordova.plugins.Diagnostic" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -282,8 +278,8 @@
 
         <!--BEGIN_MODULE LOCATION-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Location" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Location"/>
+            <feature name="Diagnostic_Location">
+                <param name="android-package" value="cordova.plugins.Diagnostic_Location" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -297,8 +293,8 @@
 
         <!--BEGIN_MODULE BLUETOOTH-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Bluetooth" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Bluetooth"/>
+            <feature name="Diagnostic_Bluetooth">
+                <param name="android-package" value="cordova.plugins.Diagnostic_Bluetooth" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -316,8 +312,8 @@
 
         <!--BEGIN_MODULE WIFI-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Wifi" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Wifi"/>
+            <feature name="Diagnostic_Wifi">
+                <param name="android-package" value="cordova.plugins.Diagnostic_Wifi" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -331,8 +327,8 @@
 
         <!--BEGIN_MODULE CAMERA-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Camera" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Camera"/>
+            <feature name="Diagnostic_Camera">
+                <param name="android-package" value="cordova.plugins.Diagnostic_Camera" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -346,8 +342,8 @@
 
         <!--BEGIN_MODULE NOTIFICATIONS-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Notifications" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Notifications"/>
+            <feature name="Diagnostic_Notifications">
+                <param name="android-package" value="cordova.plugins.Diagnostic_Notifications" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -379,8 +375,8 @@
 
         <!--BEGIN_MODULE NFC-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_NFC" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_NFC"/>
+            <feature name="Diagnostic_NFC">
+                <param name="android-package" value="cordova.plugins.Diagnostic_NFC" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -394,8 +390,8 @@
 
         <!--BEGIN_MODULE EXTERNAL_STORAGE-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_External_Storage" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_External_Storage"/>
+            <feature name="Diagnostic_External_Storage">
+                <param name="android-package" value="cordova.plugins.Diagnostic_External_Storage" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -410,8 +406,8 @@
 
     <platform name="windows">
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic" >
-                <param name="windows-package" value="cordova.plugins.Diagnostic"/>
+            <feature name="Diagnostic">
+                <param name="windows-package" value="cordova.plugins.Diagnostic" />
             </feature>
         </config-file>
 
@@ -425,8 +421,8 @@
 
         <!--BEGIN_MODULE LOCATION-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Location" >
-                <param name="windows-package" value="cordova.plugins.Diagnostic_Location"/>
+            <feature name="Diagnostic_Location">
+                <param name="windows-package" value="cordova.plugins.Diagnostic_Location" />
             </feature>
         </config-file>
 
@@ -441,8 +437,8 @@
 
         <!--BEGIN_MODULE BLUETOOTH-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Bluetooth" >
-                <param name="windows-package" value="cordova.plugins.Diagnostic_Bluetooth"/>
+            <feature name="Diagnostic_Bluetooth">
+                <param name="windows-package" value="cordova.plugins.Diagnostic_Bluetooth" />
             </feature>
         </config-file>
 
@@ -457,8 +453,8 @@
 
         <!--BEGIN_MODULE WIFI-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Wifi" >
-                <param name="windows-package" value="cordova.plugins.Diagnostic_Wifi"/>
+            <feature name="Diagnostic_Wifi">
+                <param name="windows-package" value="cordova.plugins.Diagnostic_Wifi" />
             </feature>
         </config-file>
 
@@ -473,8 +469,8 @@
 
         <!--BEGIN_MODULE CAMERA-->
         <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Camera" >
-                <param name="windows-package" value="cordova.plugins.Diagnostic_Camera"/>
+            <feature name="Diagnostic_Camera">
+                <param name="windows-package" value="cordova.plugins.Diagnostic_Camera" />
             </feature>
         </config-file>
 
